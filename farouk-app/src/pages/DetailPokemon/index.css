@@ -1,0 +1,122 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#carta-borde {
+  justify-content: center;
+  height: 500px;
+  width: 300px;
+  border: 18px solid #4b5563;
+  background-color: #4b5563;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#fondo {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#imagen-carta {
+  flex: 1;
+  background-size: cover;
+  padding: 18px;
+}
+
+#numero-carta {
+  height: 30px;
+  width: 30px;
+  font-size: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  color: white;
+  background-color: #374151;
+  border-radius: 50%;
+  display: flex;
+  float: right;
+}
+
+#descripcion-carta {
+  background-color: #e5e7eb;
+  padding: 7px 18px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#titulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: inline-flex;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+#titulo p {
+  padding: 7px 10px;
+  color: white;
+  background-color: #4b5563;
+  border-radius: 50px;
+}
+
+#titulo h1 {
+  margin-right: 10px;
+}
+
+#estadisticas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cuadro-estadistica {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 2px;
+  padding: 5px 10px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+.valor {
+  font-weight: bolder;
+  margin-left: 5px;
+}
+
+.imagen-estadistica {
+  width: auto;
+  height: 1.1em;
+  object-fit: contain;
+}
+
+.backButton {
+  padding: 10px 20px;
+  color: white;
+  background-color: #4b5563;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 300px;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.backButton:hover {
+  background-color: #85898f;
+  border: none;
+}
