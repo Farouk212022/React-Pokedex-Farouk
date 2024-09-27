@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Pokedex from "pokedex-promise-v2";
 import "./index.css";
+import BackButton from "../../components/BackButton";
 //import shield from "../../assets/Escudo.png";
 //import down from "../../assets/down.png";
 
@@ -78,9 +79,7 @@ const DetailPokemon = () => {
       )}
       {loading && <p>Loading...</p>}
       {!loading && !pokemon && <p>Pokemon not found 404 Unu</p>}
-      <Link className="backButton" to="/">
-        Volver
-      </Link>
+      <BackButton />
     </>
   );
 };

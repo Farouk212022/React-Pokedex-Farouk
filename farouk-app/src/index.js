@@ -1,26 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import ListPokemon from './pages/ListPokemon';
-import DetailPokemon from './pages/DetailPokemon';
-import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import ListPokemon from "./pages/ListPokemon";
+import DetailPokemon from "./pages/DetailPokemon";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { PokemonProvider } from "./Context/pokemonCtx";
+import { FiltersProvider } from "./Context/filterCtx";
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element: <ListPokemon/>
+    path: "/",
+    element: <ListPokemon />,
   },
   {
     path: "/detail/:idPokemon",
-    element: <DetailPokemon/>
-  }
+    element: <DetailPokemon />,
+  },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <PokemonProvider>
+      <FiltersProvider>
+        <RouterProvider router={router} />
+      </FiltersProvider>
+    </PokemonProvider>
   </React.StrictMode>
 );
 

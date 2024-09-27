@@ -1,16 +1,19 @@
 import React from "react";
 import "./index.css";
+import { useFiltersContext } from "../../Context/filterCtx";
 
-const Paginated = ({ page, total, setPage }) => {
+const Paginated = ({ total }) => {
+  const { filters, setFilters } = useFiltersContext();
+  const { page } = filters;
   const handlePrevious = () => {
     if (page > 0) {
-      setPage(page - 1);
+      setFilters({ ...filters, page: page - 1 });
     }
   };
 
   const handleNext = () => {
     if (page < total) {
-      setPage(page + 1);
+      setFilters({ ...filters, page: page + 1 });
     }
   };
 

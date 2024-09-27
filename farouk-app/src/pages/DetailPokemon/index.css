@@ -102,21 +102,3 @@
   height: 1.1em;
   object-fit: contain;
 }
-
-.backButton {
-  padding: 10px 20px;
-  color: white;
-  background-color: #4b5563;
-  font-weight: bolder;
-  text-decoration: none;
-  border-radius: 50px;
-  width: 300px;
-  justify-content: center;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-.backButton:hover {
-  background-color: #85898f;
-  border: none;
-}
