@@ -12,7 +12,7 @@ export const initialState = {
   pokemon: null,
   error: null,
   metadata: {
-    total: 1025,
+    total: 1050,
     limit: 151,
     offset: 0,
   },
