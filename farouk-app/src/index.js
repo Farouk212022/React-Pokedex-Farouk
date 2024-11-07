@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import ListPokemon from "./pages/ListPokemon";
+import ListPokemonContainer from "./pages/ListPokemon/ListPokemonContainer";
 import DetailPokemon from "./pages/DetailPokemon";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -11,7 +11,7 @@ import { FiltersProvider } from "./Context/filterCtx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ListPokemon />,
+    element: <ListPokemonContainer />,
   },
   {
     path: "/detail/:idPokemon",
